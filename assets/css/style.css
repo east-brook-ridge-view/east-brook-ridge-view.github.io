@@ -396,11 +396,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 28px;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -409,6 +409,17 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+#spacer1 {
+  min-height: 60px;
+}
+
+@media (max-width: 767px) {
+  #spacer1 {
+    min-height: 40px;
+  }
+}
+
 section {
   padding: 60px 0;
 }
@@ -801,9 +812,9 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  box-sizing: content-box;
   text-align: center;
-  min-height: 320px;
+  margin-bottom: 10px;
+  min-width: 300px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -864,24 +875,6 @@ section {
   position: absolute;
   bottom: -20px;
   left: calc(50% - 20px);
-}
-
-.testimonials .owl-nav, .testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #67b0d1 !important;
 }
 
 @media (max-width: 767px) {
